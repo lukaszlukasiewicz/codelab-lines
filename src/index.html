@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/codeliner.js"></script>
+  <style>
+    html,body {
+      padding:0;
+      margin:0;
+      min-height:100vh;
+    }
+    [data-lines] {
+      min-height:100%;
+      max-height:100vh;
+    }
+    canvas {
+      width:100%;
+      max-height:100vh;
+    }
+  </style>
+</head>
+<body>
+  <div data-lines='[{"color":"#80b800","width":2},{"color":"#e9aa00","width":2},{"color":"#a76ecb","width":2},{"color":"#d6531b","width":2}]'></div>
+  <script>
+    const containers = document.querySelectorAll('[data-lines]');
+    const codeLiners = [...containers].map(container => codeLiner(container))
+  </script>
+</body>
+</html>

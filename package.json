@@ -1,0 +1,16 @@
+{
+  "name": "codelab-lines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "shx rm -rf build/* && parcel build src/index.html --out-dir build/ --no-cache --public-url ./ --no-content-hash"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "shx": "^0.3.2"
+  }
+}
